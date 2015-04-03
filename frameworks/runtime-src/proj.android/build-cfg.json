@@ -1,0 +1,48 @@
+{
+    "ndk_module_path" :[
+        "../../js-bindings",
+        "../../js-bindings/cocos2d-x",
+        "../../js-bindings/cocos2d-x/cocos",
+        "../../js-bindings/cocos2d-x/external"
+    ],
+    "copy_resources": [
+        {
+            "from": "../../../src",
+            "to": "src"
+        },
+        {
+            "from": "../../../res",
+            "to": "res"
+        },
+        {
+            "from": "../../../main.js",
+            "to": ""
+        },
+		{
+    "from": "../../js-bindings/cocos2d-x/plugin/jsbindings/script", 
+    "to": ""
+},
+{
+    "from": "../../js-bindings/cocos2d-x/plugin/protocols/proj.android/src", 
+    "to": "../src"
+},
+{
+    "from": "../../js-bindings/cocos2d-x/plugin/plugins/googleplay/proj.android/src", 
+    "to": "../src"
+}
+    ],
+    "must_copy_resources": [
+        {
+            "from": "../../js-bindings/bindings/script",
+            "to": "script"
+        },
+        {
+            "from": "../../../config.json",
+            "to": ""
+        },
+        {
+            "from": "../../../project.json",
+            "to": ""
+        } 
+    ]
+}
